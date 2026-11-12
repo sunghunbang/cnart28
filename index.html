@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>선배들이 알려주는 충남예고 미술과 합격수기</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+<style>
+:root{--ink:#1f1d1a;--sub:#6b665e;--line:#e4e0d8;--bg:#f7f5f0;--card:#fff;--accent:#c2410c;--accent-soft:#fff1e8;--ok:#15803d;--warn:#b45309;--err:#b91c1c}
+*{box-sizing:border-box}
+body{margin:0;font-family:Pretendard,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+header{background:var(--ink);color:#fff;padding:28px 20px 22px}
+header .wrap{max-width:760px;margin:0 auto}
+header small{letter-spacing:.12em;color:#f3c9a8;font-weight:600;font-size:12px}
+header h1{margin:6px 0 6px;font-size:25px;letter-spacing:-.02em;line-height:1.35}
+header p{margin:0;color:#cfcac0;font-size:14px}
+.lock{display:inline-flex;align-items:center;gap:6px;margin-top:14px;background:rgba(194,65,12,.18);border:1px solid rgba(243,201,168,.45);color:#fcd9bd;font-size:12.5px;font-weight:600;padding:6px 12px;border-radius:999px}
+main{max-width:760px;margin:0 auto;padding:20px 16px 120px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 20px;margin-bottom:16px}
+.card h2{font-size:18px;margin:0 0 4px;display:flex;align-items:center;gap:8px}
+.card h2 .n{background:var(--accent);color:#fff;border-radius:6px;font-size:12px;padding:2px 8px}
+.card .desc{color:var(--sub);font-size:13.5px;margin:0 0 16px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.full{grid-column:1/-1}
+label.f{display:block;font-size:13.5px;font-weight:600;margin-bottom:6px}
+.req{color:var(--accent)} .opt{color:var(--sub);font-weight:400}
+input[type=text],input[type=number],select,textarea{width:100%;font:inherit;font-size:15px;padding:10px 12px;border:1px solid var(--line);border-radius:9px;background:#fff;color:var(--ink)}
+input[readonly]{background:var(--bg);color:var(--sub)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:-1px;border-color:transparent}
+textarea{min-height:150px;resize:vertical;line-height:1.65}
+.hint{font-size:12.5px;color:var(--sub);margin-top:5px}
+.row{display:flex;gap:8px;align-items:center}
+.row input{flex:1}
+.seg{display:flex;gap:6px;flex-wrap:wrap}
+.seg label{border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:14px;cursor:pointer;background:#fff}
+.seg input{display:none}
+.seg input:checked+span{color:var(--accent);font-weight:700}
+.seg label:has(input:checked){border-color:var(--accent);background:var(--accent-soft)}
+.q{margin-bottom:22px}
+.q:last-child{margin-bottom:0}
+.q .qt{font-weight:700;font-size:15px;margin-bottom:4px}
+.q .guide{font-size:12.5px;color:var(--sub);background:var(--bg);border-radius:8px;padding:8px 10px;margin-bottom:8px}
+.cnt{font-size:12px;color:var(--sub);text-align:right;margin-top:3px}
+.cnt.low{color:var(--warn)}
+/* 평소작품 */
+.drop{border:2px dashed #d6cfc2;border-radius:14px;padding:26px 16px;text-align:center;background:#fcfbf8;cursor:pointer;transition:.15s}
+.drop.over{border-color:var(--accent);background:var(--accent-soft)}
+.drop .ic{font-size:30px}
+.drop b{display:block;font-size:15px;margin:4px 0 2px}
+.wcount{display:flex;justify-content:space-between;align-items:center;margin:14px 0 8px;font-size:14px}
+.wcount .pill{font-weight:700;padding:3px 10px;border-radius:999px;background:#fff3d6;color:var(--warn)}
+.wcount .pill.ok{background:#dcfce7;color:var(--ok)}
+.works{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.tile{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;position:relative}
+.tile.dragging{opacity:.4}
+.tile.target{outline:2px solid var(--accent)}
+.tile .im{aspect-ratio:1/1;background:#f1efe8 center/cover no-repeat;position:relative;cursor:grab}
+.tile .no{position:absolute;left:6px;top:6px;background:rgba(0,0,0,.65);color:#fff;font-size:11.5px;font-weight:700;padding:2px 7px;border-radius:999px}
+.tile .st{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.7);font-size:12.5px;font-weight:700;color:var(--sub)}
+.tile .st.err{color:var(--err);cursor:pointer}
+.tile .ctl{display:flex;gap:4px;padding:6px}
+.tile .ctl input{flex:1;min-width:0;font-size:12.5px;padding:6px 8px;border-radius:7px}
+.tile .x{position:absolute;right:6px;top:6px;width:26px;height:26px;border-radius:50%;border:0;background:rgba(0,0,0,.65);color:#fff;font-size:14px;cursor:pointer;line-height:1}
+.tile .mv{border:1px solid var(--line);background:#fff;border-radius:7px;font-size:12px;width:26px;cursor:pointer;padding:0}
+.btn{font:inherit;border:0;border-radius:9px;padding:9px 16px;font-size:14px;font-weight:600;cursor:pointer;background:var(--ink);color:#fff}
+.btn.ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.btn:disabled{opacity:.5;cursor:default}
+.agree{display:flex;gap:10px;align-items:flex-start;font-size:14px}
+.agree input{width:20px;height:20px;margin-top:2px;accent-color:var(--accent)}
+.agreebox{background:var(--bg);border-radius:10px;padding:12px 14px;font-size:13px;color:var(--sub);margin-bottom:12px}
+.agreebox ul{margin:6px 0 0;padding-left:18px}
+.bar{position:fixed;left:0;right:0;bottom:0;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-top:1px solid var(--line);padding:12px 16px}
+.bar .wrap{max-width:760px;margin:0 auto;display:flex;gap:10px;align-items:center}
+.bar .prog{flex:1;font-size:13px;color:var(--sub)}
+.bar .prog .track{height:6px;background:var(--line);border-radius:6px;margin-top:5px;overflow:hidden}
+.bar .prog .fill{height:100%;background:var(--accent);width:0;transition:width .3s}
+.bar .btn.main{background:var(--accent);padding:12px 22px;font-size:15px}
+.notice{border-radius:12px;padding:14px 16px;margin-bottom:16px;font-size:14px}
+.notice.info{background:#eef4ff;color:#1e3a8a}
+.notice.ok{background:#ecfdf3;color:var(--ok)}
+.notice.warn{background:#fff7e6;color:var(--warn)}
+.center{text-align:center;padding:60px 20px}
+.center h2{font-size:22px;margin:12px 0 6px}
+.center p{color:var(--sub)}
+.big{font-size:48px}
+.hide{display:none!important}
+.overlay{position:fixed;inset:0;background:rgba(20,18,15,.55);display:flex;align-items:center;justify-content:center;z-index:50;color:#fff;flex-direction:column;gap:12px;font-weight:600}
+.spin{width:38px;height:38px;border:4px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:s 1s linear infinite}
+@keyframes s{to{transform:rotate(360deg)}}
+.demo{background:#fde68a;color:#78350f;text-align:center;font-size:13px;padding:6px}
+footer{text-align:center;font-size:12px;color:var(--sub);padding:0 16px 100px}
+@media(max-width:560px){.grid{grid-template-columns:1fr}header h1{font-size:21px}.works{grid-template-columns:repeat(2,1fr)}}
+
+/* ── 민트·화이트 심플 테마 ── */
+:root{--ink:#222;--sub:#8a8f95;--line:#ececec;--bg:#fff;--card:#fff;--accent:#14c4a2;--accent-dark:#0aa486;--accent-soft:#e9faf6;--soft:#f7f8f9;--ok:#0aa486;--warn:#d97706;--err:#dc2626}
+body{background:#fff}
+header{background:#fff;color:var(--ink);padding:34px 20px 26px;border-top:4px solid var(--accent);border-bottom:1px solid var(--line)}
+header small{color:var(--accent-dark);letter-spacing:.08em}
+header h1{font-weight:800}
+header p{color:var(--sub)}
+.lock{background:var(--soft);border:1px solid var(--line);color:#555;font-weight:500}
+main{padding-top:8px}
+.card{border:0;border-bottom:1px solid var(--line);border-radius:0;padding:30px 2px;margin:0}
+.card h2{font-size:19px}
+.card h2 .n{background:none;color:var(--accent-dark);font-size:19px;padding:0;font-weight:800}
+input[type=text],input[type=number],select,textarea{border-color:#e2e4e7;border-radius:6px}
+input[readonly]{background:var(--soft)}
+input:focus,select:focus,textarea:focus{outline-color:var(--accent)}
+.seg label{border-radius:6px;border-color:#e2e4e7}
+.seg label:has(input:checked){border-color:var(--accent);background:var(--accent-soft)}
+.seg input:checked+span{color:var(--accent-dark)}
+.q .guide{background:var(--soft);border-radius:6px}
+.drop{border-color:#cfe9e2;background:#fbfefd;border-radius:10px}
+.drop.over{border-color:var(--accent);background:var(--accent-soft)}
+.tile{border-radius:8px}
+.wcount .pill{background:var(--soft);color:var(--sub)}
+.wcount .pill.ok{background:var(--accent-soft);color:var(--accent-dark)}
+.btn{border-radius:6px}
+.bar{background:#fff}
+.bar .prog .fill{background:var(--accent)}
+.bar .btn.main,.btn.acc{background:var(--accent)}
+.bar .btn.main:hover{background:var(--accent-dark)}
+.agreebox{background:var(--soft);border-radius:6px}
+.agree input{accent-color:var(--accent)}
+.notice{border-radius:6px}
+.notice.info{background:var(--accent-soft);color:#0b6e5b}
+.req{color:var(--accent-dark)}
+footer{padding-top:24px}
+.maker{position:absolute;right:0;top:-14px;font-size:12px;color:var(--sub)}
+@media(max-width:560px){.maker{position:static;margin:-14px 0 10px;text-align:right}}
+</style>
+</head>
+<body>
+<div id="demoBar" class="demo hide">데모 모드 — 서버(API_URL) 연결 전 미리보기입니다.</div>
+<header><div class="wrap" style="position:relative">
+  <div class="maker">자료제작 · 충남예술고 교사 방성훈</div>
+  <small>CHUNGNAM ARTS HIGH SCHOOL · 미술과</small>
+  <h1>선배들이 알려주는<br>충남예고 미술과 합격수기</h1>
+  <p>후배들에게 가장 큰 힘이 되는 건 선배의 진짜 이야기예요. 편하게, 그러나 구체적으로 적어 주세요.</p>
+  <div class="lock">🔒 충남예술고 학생을 위한 전용 자료입니다 · 불법 복제·공유 금지</div>
+</div></header>
+
+<main>
+  <div id="loading" class="center"><div class="spin" style="margin:0 auto;border-color:#ddd;border-top-color:var(--accent)"></div><p>불러오는 중…</p></div>
+  <div id="errorView" class="center hide"><div class="big">🔒</div><h2>링크를 확인해 주세요</h2><p id="errorMsg"></p></div>
+  <div id="doneView" class="center hide"><div class="big">🎉</div><h2>제출 완료!</h2><p id="doneMsg"></p><p style="margin-top:18px"><button class="btn ghost" onclick="showForm()">제출 내용 다시 보기 / 수정</button></p></div>
+
+  <form id="form" class="hide" autocomplete="off" novalidate>
+    <div id="statusNote"></div>
+
+    <section class="card">
+      <h2><span class="n">1</span>인적사항</h2>
+      <p class="desc">이름은 합격수기에 그대로 공개됩니다.</p>
+      <div class="grid">
+        <div><label class="f">이름 <span class="req">*</span></label><input type="text" name="name" required maxlength="20"></div>
+        <div><label class="f">출신고교</label><input type="text" name="highSchool" value="충남예술고등학교" readonly></div>
+        <div class="full"><label class="f">전공 <span class="req">*</span></label>
+          <div class="seg">
+            <label><input type="radio" name="hsMajor" value="디자인"><span>디자인</span></label>
+            <label><input type="radio" name="hsMajor" value="서양화"><span>서양화</span></label>
+            <label><input type="radio" name="hsMajor" value="조소"><span>조소</span></label>
+            <label><input type="radio" name="hsMajor" value="한국화"><span>한국화</span></label>
+          </div>
+        </div>
+        <div class="full"><label class="f">전공실기 <span class="req">*</span> <span class="opt">(해당하는 것 모두 선택)</span></label>
+          <div class="seg">
+            <label><input type="checkbox" name="prep" value="방과후"><span>방과후</span></label>
+            <label><input type="checkbox" name="prep" value="학원"><span>학원</span></label>
+          </div>
+          <div id="academyBox" class="hide" style="margin-top:10px"><input type="text" name="academy" placeholder="학원명 (예: ○○미술학원)" maxlength="40"></div>
+        </div>
+        <div class="full"><label class="f">전공실기경력 <span class="req">*</span></label>
+          <div class="row"><input type="number" name="careerY" min="0" max="15" placeholder="0"><span>년</span><input type="number" name="careerM" min="0" max="11" placeholder="0"><span>개월</span></div>
+          <div class="hint">전공 실기를 처음 시작한 때부터 합격까지의 기간</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2><span class="n">2</span>합격 정보</h2>
+      <p class="desc">대학 1곳당 수기 1편입니다. 여러 대학에 붙었다면 대표 대학으로 쓰고, 나머지는 ‘복수합격’ 칸에 적어 주세요.</p>
+      <div class="grid">
+        <div><label class="f">합격년도 <span class="req">*</span></label><select name="year"></select></div>
+        <div><label class="f">구분 <span class="req">*</span></label>
+          <div class="seg">
+            <label><input type="radio" name="track" value="수시"><span>수시</span></label>
+            <label><input type="radio" name="track" value="정시"><span>정시</span></label>
+            <label><input type="radio" name="track" value="기타"><span>기타(특별전형 등)</span></label>
+          </div>
+        </div>
+        <div><label class="f">대학교 <span class="req">*</span></label><input type="text" name="univ" placeholder="예: 홍익대" maxlength="30"></div>
+        <div><label class="f">캠퍼스 <span class="opt">(있으면)</span></label><input type="text" name="campus" placeholder="예: 서울 / 세종 / 국제" maxlength="20"></div>
+        <div><label class="f">전공(학과) <span class="req">*</span></label><input type="text" name="major" placeholder="예: 시각디자인과" maxlength="40"></div>
+        <div><label class="f">경쟁률 <span class="opt">(아는 경우)</span></label>
+          <div class="row"><input type="text" name="ratioA" placeholder="4.5" inputmode="decimal"><span>: 1</span></div></div>
+        <div class="full"><label class="f">특기사항 <span class="opt">(선택)</span></label><input type="text" name="special" placeholder="예: 수석합격, 실기 만점, 3관왕 등" maxlength="100"></div>
+        <div class="full"><label class="f">복수합격 대학 <span class="opt">(있으면)</span></label><input type="text" name="multi" placeholder="예: 국민대 공업디자인, 서울과기대 디자인" maxlength="200"></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2><span class="n">3</span>성적</h2>
+      <p class="desc">후배들이 자기 위치를 가늠할 수 있도록 솔직하게 적어 주세요.</p>
+      <div class="grid">
+        <div><label class="f">내신등급 <span class="req">*</span></label><input type="text" name="gpa" placeholder="예: 3.2" inputmode="decimal" maxlength="10"><div class="hint">국어·영어·사회 기준 평균 등급</div></div>
+        <div><label class="f">모의고사 성적 <span class="opt">(선택)</span></label><input type="text" name="mock" placeholder="예: 국어2 · 영어3 · 사탐2 (9월 모평)" maxlength="100"><div class="hint">과목별 등급과 기준 시험(몇 월 모평/수능)</div></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2><span class="n">4</span>합격수기 문답</h2>
+      <p class="desc">각 문항 최소 300자 이상을 권장해요. ‘열심히 했다’보다 <b>언제·무엇을·어떻게</b>를 적으면 후배에게 훨씬 도움이 됩니다.</p>
+      <div id="qs"></div>
+    </section>
+
+    <section class="card">
+      <h2><span class="n">5</span>평소작품 <span class="req" style="font-size:14px">* 최소 5장</span></h2>
+      <p class="desc">사진을 이곳에 <b>끌어다 놓거나</b> 눌러서 여러 장을 한 번에 고르세요. 올린 뒤에는 끌어서 순서를 바꿀 수 있어요. 첫 번째 사진이 대표작이 됩니다.</p>
+      <div class="drop" id="drop">
+        <div class="ic">🖼️</div><b>여기로 작품 사진을 끌어다 놓으세요</b>
+        <div class="hint">또는 눌러서 선택 · 여러 장 가능 · 사진은 자동으로 줄여서 올라가요 · 작품에 학원 로고가 보이면 안 돼요</div>
+        <input type="file" id="fileIn" accept="image/*" multiple class="hide">
+      </div>
+      <div class="wcount"><span>올린 작품 <b id="wNum">0</b>장</span><span class="pill" id="wPill">5장 이상 필요</span></div>
+      <div class="works" id="works"></div>
+    </section>
+
+    <section class="card">
+      <h2><span class="n">6</span>활용 동의</h2>
+      <div class="agreebox">작성한 합격수기와 작품 사진은 아래와 같이 활용됩니다.
+        <ul><li>충남예술고 미술과 후배 학생들을 위한 합격수기 자료(학교 내부 전용)</li>
+        <li>이름·합격대학·성적·작품이 함께 공개됩니다</li>
+        <li>제출 내용은 담당 선생님이 확인하며, 제출 단계에서는 다른 학생에게 보이지 않습니다</li></ul>
+      </div>
+      <label class="agree"><input type="checkbox" name="agree"><span>위 내용을 확인했고, 합격수기 및 작품 사진 활용에 동의합니다. <span class="req">*</span></span></label>
+    </section>
+  </form>
+</main>
+<footer class="hide" id="foot">ⓒ 충남예술고등학교 미술과 · 자료제작 교사 방성훈 · 본 자료는 충남예술고 학생 전용이며 무단 복제·배포·공유를 금지합니다.</footer>
+
+<div class="bar hide" id="bar"><div class="wrap">
+  <div class="prog"><span id="progTxt">작성 0%</span> · <span id="saveTxt">자동 임시저장</span><div class="track"><div class="fill" id="progFill"></div></div></div>
+  <button class="btn main" id="submitBtn" type="button">제출하기</button>
+</div></div>
+
+<div class="overlay hide" id="overlay"><div class="spin"></div><div id="overlayTxt">제출 중…</div></div>
+
+<script>
+/* ===== 설정: Apps Script 웹앱 URL을 붙여 넣으세요 ===== */
+const API_URL = 'https://script.google.com/macros/s/AKfycbwxk4wwS31QDMu60TbF6AIPtHawQsg6XQo0NMmx5ubBhhHBmZAr_IXR6G5Q49gSfkEt6w/exec';
+/* ===================================================== */
+
+const QUESTIONS = [
+  ['지원한 전형/학과의 지원 동기는 무엇이며, 어떻게 준비했나요?', '이 학과를 고른 계기, 전형 선택 이유(수시/정시), 언제부터 어떤 준비를 했는지'],
+  ['학업성적(수능, 내신)은 평소에 어떻게 준비했나요?', '실기와 공부 시간 배분, 과목별 공부 방법, 시기별(1·2·3학년) 계획'],
+  ['실기 준비는 어떻게 했나요?', '하루 연습 루틴, 약점 보완 방법, 학교 수업·방과후 활용'],
+  ['전공실기(수행평가) 성적은 어땠나요?', '학년별 전공실기·수행평가 성적과 변화, 성적을 올리기 위해 한 노력'],
+  ['실기고사 당일 출제문제는 무엇이었으며, 문제를 받고 어떻게 발상하여 풀어나갔나요?', '문제 원문(기억나는 만큼), 제시물·조건, 발상 과정, 구도·시간 배분, 마무리 전략'],
+  ['고사장의 구체적인 분위기는 어떠했나요?', '입실 시간, 자리·조명, 이젤/화판 환경, 감독관 안내, 준비물에서 아쉬웠던 점'],
+  ['힘들고 지칠 때 어떻게 슬럼프를 극복했나요?', '가장 힘들었던 시기와 이유, 다시 힘을 낸 계기와 나만의 방법'],
+  ['합격의 주요인은 무엇이라고 생각하나요?', '실기·성적·면접 중 결정적이었던 부분, 다른 지원자와 달랐던 점'],
+  ['마지막으로 후배들에게 꼭 하고 싶은 말', '선배로서 진심으로 전하고 싶은 한마디, 꼭 해야 할 것 / 하지 말아야 할 것']
+];
+const NQ = QUESTIONS.length, MIN_CHARS = 300, MIN_WORKS = 5, MAX_WORKS = 20;
+const DEMO = !API_URL;
+const TOKEN = new URLSearchParams(location.search).get('t') || (DEMO ? 'demo-token' : '');
+const DRAFT_KEY = 'hapgyeok_draft_' + TOKEN;
+const form = document.getElementById('form');
+const $ = s => document.querySelector(s);
+let works = [];   // {key, id, caption, src, state:'uploading'|'done'|'error', b64}
+let locked = false, wkey = 0;
+
+function lsGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+function lsSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+function lsDel(k) { try { localStorage.removeItem(k); } catch (e) {} }
+function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
+
+async function api(body) {
+  if (DEMO) return demoApi(body);
+  const res = await fetch(API_URL, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(body) });
+  const j = await res.json();
+  if (!j.ok) throw new Error(j.error || '오류가 발생했습니다.');
+  return j;
+}
+const demoImgs = {};
+function demoApi(b) {
+  return new Promise(r => setTimeout(() => {
+    if (b.action === 'load') { const s = JSON.parse(lsGet('hapgyeok_demo_db') || 'null'); r({ ok: true, name: '홍길동', status: s ? '제출' : '미제출', essay: s }); }
+    else if (b.action === 'upload') { const id = 'demo' + Math.random().toString(16).slice(2, 10); demoImgs[id] = b.b64; r({ ok: true, id }); }
+    else if (b.action === 'thumb') r(demoImgs[b.id] ? { ok: true, mime: 'image/jpeg', b64: demoImgs[b.id] } : { ok: true, mime: 'image/svg+xml', b64: btoa('<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"><rect width="10" height="10" fill="#ddd"/></svg>') });
+    else { lsSet('hapgyeok_demo_db', JSON.stringify(Object.assign({ submittedAt: new Date().toLocaleString() }, b.data))); r({ ok: true, submittedAt: new Date().toLocaleString() }); }
+  }, b.action === 'upload' ? 700 : 300));
+}
+
+/* ---------- 화면 구성 ---------- */
+function build() {
+  const ySel = form.year, now = new Date().getFullYear();
+  for (let y = now + 2; y >= now - 3; y--) ySel.add(new Option(y + '학년도', y + '학년도'));
+  ySel.value = (now + 1) + '학년도';
+  $('#qs').innerHTML = QUESTIONS.map((q, i) => `
+    <div class="q"><div class="qt">Q${i + 1}. ${q[0]}</div>
+    <div class="guide">💡 ${q[1]}</div>
+    <textarea name="q${i + 1}" maxlength="5000" placeholder="여기에 작성하세요"></textarea>
+    <div class="cnt" data-for="q${i + 1}">0자</div></div>`).join('');
+  form.addEventListener('input', onChange);
+  form.addEventListener('change', onChange);
+  setupDrop();
+  $('#submitBtn').onclick = submit;
+}
+
+/* ---------- 평소작품: 드래그 앤 드롭 ---------- */
+function setupDrop() {
+  const drop = $('#drop'), inp = $('#fileIn');
+  drop.onclick = () => !locked && inp.click();
+  inp.onchange = () => { addFiles(inp.files); inp.value = ''; };
+  ['dragenter', 'dragover'].forEach(ev => drop.addEventListener(ev, e => { if (hasFiles(e)) { e.preventDefault(); drop.classList.add('over'); } }));
+  ['dragleave', 'drop'].forEach(ev => drop.addEventListener(ev, () => drop.classList.remove('over')));
+  drop.addEventListener('drop', e => { if (hasFiles(e)) { e.preventDefault(); addFiles(e.dataTransfer.files); } });
+  // 페이지 다른 곳에 떨어뜨려도 브라우저가 사진을 열지 않도록
+  window.addEventListener('dragover', e => { if (hasFiles(e)) e.preventDefault(); });
+  window.addEventListener('drop', e => { if (hasFiles(e)) { e.preventDefault(); if (!e.target.closest('#drop')) addFiles(e.dataTransfer.files); } });
+}
+function hasFiles(e) { return e.dataTransfer && [...(e.dataTransfer.types || [])].includes('Files'); }
+
+async function addFiles(list) {
+  if (locked) return;
+  const imgs = [...list].filter(f => /^image\//.test(f.type));
+  if (!imgs.length) return;
+  const room = MAX_WORKS - works.length;
+  if (room <= 0) return alert(`작품은 최대 ${MAX_WORKS}장까지 올릴 수 있어요.`);
+  if (imgs.length > room) alert(`최대 ${MAX_WORKS}장까지라서 ${room}장만 추가할게요.`);
+  for (const f of imgs.slice(0, room)) {
+    try {
+      const c = await compress(f, 2000);
+      works.push({ key: ++wkey, id: '', caption: '', src: c.dataUrl, b64: c.b64, state: 'uploading', small: c.origW < 900 });
+      renderWorks();
+    } catch (e) { alert(f.name + ' 파일을 읽을 수 없어요.'); }
+  }
+  pump();
+}
+let pumping = false;
+async function pump() {
+  if (pumping) return; pumping = true;
+  let w;
+  while ((w = works.find(x => x.state === 'uploading'))) {
+    try { const r = await api({ action: 'upload', token: TOKEN, b64: w.b64, mime: 'image/jpeg' }); w.id = r.id; w.state = 'done'; w.b64 = null; }
+    catch (e) { w.state = 'error'; w.err = e.message; }
+    renderWorks(); onChange();
+  }
+  pumping = false;
+}
+function compress(file, maxSide) {
+  return new Promise((resolve, reject) => {
+    const img = new Image(), url = URL.createObjectURL(file);
+    img.onload = () => {
+      const w = img.naturalWidth, h = img.naturalHeight, s = Math.min(1, maxSide / Math.max(w, h));
+      const c = document.createElement('canvas'); c.width = Math.round(w * s); c.height = Math.round(h * s);
+      const ctx = c.getContext('2d'); ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, c.width, c.height); ctx.drawImage(img, 0, 0, c.width, c.height);
+      const dataUrl = c.toDataURL('image/jpeg', 0.86); URL.revokeObjectURL(url);
+      resolve({ dataUrl, b64: dataUrl.split(',')[1], origW: w });
+    };
+    img.onerror = () => { URL.revokeObjectURL(url); reject(); };
+    img.src = url;
+  });
+}
+
+let dragKey = null;
+function renderWorks() {
+  const box = $('#works');
+  box.innerHTML = works.map((w, i) => `
+    <div class="tile" draggable="${!locked}" data-k="${w.key}">
+      <div class="im" style="background-image:${w.src ? `url(${w.src})` : 'none'}">
+        <span class="no">${i === 0 ? '대표작' : i + 1}</span>
+        ${w.state === 'uploading' ? '<div class="st">올리는 중…</div>' : ''}
+        ${w.state === 'loading' ? '<div class="st">불러오는 중…</div>' : ''}
+        ${w.state === 'error' ? `<div class="st err" data-retry="${w.key}">⚠ 실패 · 눌러서 다시</div>` : ''}
+        ${locked ? '' : `<button type="button" class="x" data-del="${w.key}" title="삭제">✕</button>`}
+      </div>
+      <div class="ctl">
+        ${locked ? '' : `<button type="button" class="mv" data-mv="-1" data-k="${w.key}" title="앞으로">◀</button>`}
+        <input type="text" placeholder="작품 제목(선택)" maxlength="100" value="${esc(w.caption)}" data-cap="${w.key}" ${locked ? 'readonly' : ''}>
+        ${locked ? '' : `<button type="button" class="mv" data-mv="1" data-k="${w.key}" title="뒤로">▶</button>`}
+      </div>
+      ${w.small ? '<div class="hint" style="padding:0 8px 6px;color:var(--warn)">⚠ 해상도가 낮아요</div>' : ''}
+    </div>`).join('');
+  const n = works.filter(w => w.state === 'done').length;
+  $('#wNum').textContent = n;
+  const pill = $('#wPill'); pill.classList.toggle('ok', n >= MIN_WORKS);
+  pill.textContent = n >= MIN_WORKS ? '✓ 조건 충족' : `${MIN_WORKS - n}장 더 필요`;
+}
+function moveWork(key, to) {
+  const from = works.findIndex(w => w.key === key); if (from < 0 || to < 0 || to >= works.length) return;
+  const [w] = works.splice(from, 1); works.splice(to, 0, w); renderWorks(); onChange();
+}
+$('#works').addEventListener('click', e => {
+  const t = e.target;
+  if (t.dataset.del) { works = works.filter(w => w.key !== +t.dataset.del); renderWorks(); onChange(); }
+  if (t.dataset.mv) { const k = +t.dataset.k; moveWork(k, works.findIndex(w => w.key === k) + +t.dataset.mv); }
+  if (t.dataset.retry) { const w = works.find(x => x.key === +t.dataset.retry); if (w && w.b64) { w.state = 'uploading'; renderWorks(); pump(); } }
+});
+$('#works').addEventListener('input', e => { const k = e.target.dataset.cap; if (k) { works.find(w => w.key === +k).caption = e.target.value; } });
+$('#works').addEventListener('dragstart', e => { const t = e.target.closest('.tile'); if (!t) return; dragKey = +t.dataset.k; t.classList.add('dragging'); e.dataTransfer.effectAllowed = 'move'; e.dataTransfer.setData('text/plain', 'tile'); });
+$('#works').addEventListener('dragend', () => { dragKey = null; document.querySelectorAll('.tile').forEach(t => t.classList.remove('dragging', 'target')); });
+$('#works').addEventListener('dragover', e => { if (dragKey == null) return; e.preventDefault(); document.querySelectorAll('.tile').forEach(t => t.classList.remove('target')); const t = e.target.closest('.tile'); if (t) t.classList.add('target'); });
+$('#works').addEventListener('drop', e => { if (dragKey == null) return; e.preventDefault(); e.stopPropagation(); const t = e.target.closest('.tile'); if (t) moveWork(dragKey, works.findIndex(w => w.key === +t.dataset.k)); });
+
+async function loadSavedWorks(list) {
+  works = (list || []).filter(w => w && w.id).map(w => ({ key: ++wkey, id: w.id, caption: w.caption || '', src: '', state: 'loading' }));
+  renderWorks();
+  for (const w of works.slice()) {
+    try { const r = await api({ action: 'thumb', token: TOKEN, id: w.id }); w.src = `data:${r.mime};base64,${r.b64}`; w.state = 'done'; }
+    catch (e) { works = works.filter(x => x !== w); }
+    renderWorks(); onChange();
+  }
+}
+
+/* ---------- 값 처리 ---------- */
+const TEXT_KEYS = ['name', 'year', 'univ', 'campus', 'major', 'special', 'multi', 'gpa', 'mock'];
+function collect() {
+  const f = form, d = {};
+  TEXT_KEYS.forEach(k => d[k] = f[k].value.trim());
+  for (let i = 1; i <= NQ; i++) d['q' + i] = f['q' + i].value.trim();
+  d.highSchool = '충남예술고등학교';
+  d.track = (f.querySelector('[name=track]:checked') || {}).value || '';
+  d.hsMajor = (f.querySelector('[name=hsMajor]:checked') || {}).value || '';
+  d.prep = [...f.querySelectorAll('[name=prep]:checked')].map(x => x.value).join('+');
+  d.academy = d.prep.includes('학원') ? f.academy.value.trim() : '';
+  const y = f.careerY.value, m = f.careerM.value;
+  d.career = (y || m) ? `${y || 0}년 ${m || 0}개월` : '';
+  d.ratio = f.ratioA.value.trim() ? `${f.ratioA.value.trim()} : 1` : '';
+  d.agree = f.agree.checked;
+  d.works = works.filter(w => w.state === 'done').map(w => ({ id: w.id, caption: w.caption.trim() }));
+  return d;
+}
+function fill(d) {
+  if (!d) return;
+  const f = form;
+  TEXT_KEYS.forEach(k => { if (d[k] != null && d[k] !== '') f[k].value = d[k]; });
+  for (let i = 1; i <= NQ; i++) if (d['q' + i] != null) f['q' + i].value = d['q' + i];
+  const r = f.querySelector(`[name=track][value="${d.track}"]`); if (r) r.checked = true;
+  const hm = f.querySelector(`[name=hsMajor][value="${d.hsMajor}"]`); if (hm) hm.checked = true;
+  String(d.prep || '').split('+').forEach(v => { const c = f.querySelector(`[name=prep][value="${v}"]`); if (c) c.checked = true; });
+  if (d.academy) f.academy.value = d.academy;
+  if (d.career) { const m = String(d.career).match(/(\d+)\s*년\s*(\d+)?/); if (m) { f.careerY.value = m[1]; f.careerM.value = m[2] || ''; } }
+  if (d.ratio) f.ratioA.value = String(d.ratio).replace(/\s*:\s*1\s*$/, '');
+  if (d.agree === true || d.agree === '동의함') f.agree.checked = true;
+}
+
+let saveT;
+function onChange() {
+  $('#academyBox').classList.toggle('hide', !form.querySelector('[name=prep][value=학원]:checked'));
+  form.querySelectorAll('.cnt').forEach(el => {
+    const n = form[el.dataset.for].value.trim().length;
+    el.textContent = n + '자' + (n < MIN_CHARS ? ` (권장 ${MIN_CHARS}자 이상)` : ' ✓');
+    el.classList.toggle('low', n > 0 && n < MIN_CHARS);
+  });
+  const d = collect();
+  const checks = [d.name, d.hsMajor, d.prep, d.career, d.track, d.univ, d.major, d.gpa, d.agree, d.works.length >= MIN_WORKS]
+    .concat([...Array(NQ)].map((_, i) => d['q' + (i + 1)].length >= 50));
+  const pct = Math.round(checks.filter(Boolean).length / checks.length * 100);
+  $('#progTxt').textContent = `작성 ${pct}%`; $('#progFill').style.width = pct + '%';
+  if (locked) return;
+  clearTimeout(saveT);
+  saveT = setTimeout(() => { lsSet(DRAFT_KEY, JSON.stringify(d)); $('#saveTxt').textContent = '임시저장됨 ' + new Date().toTimeString().slice(0, 5); }, 800);
+}
+
+function validate(d) {
+  const miss = [];
+  if (!d.name) miss.push('이름'); if (!d.hsMajor) miss.push('전공(디자인/서양화/조소/한국화)');
+  if (!d.prep) miss.push('전공실기(방과후/학원)'); if (d.prep.includes('학원') && !d.academy) miss.push('학원명');
+  if (!d.career) miss.push('전공실기경력'); if (!d.track) miss.push('구분(수시/정시)');
+  if (!d.univ) miss.push('대학교'); if (!d.major) miss.push('전공'); if (!d.gpa) miss.push('내신등급(국·영·사 평균)');
+  for (let i = 1; i <= NQ; i++) if (d['q' + i].length < 30) miss.push(`Q${i}(30자 이상)`);
+  if (d.works.length < MIN_WORKS) miss.push(`평소작품 최소 ${MIN_WORKS}장 (현재 ${d.works.length}장)`);
+  if (!d.agree) miss.push('활용 동의');
+  return miss;
+}
+
+async function submit() {
+  if (works.some(w => w.state === 'uploading' || w.state === 'loading')) return alert('사진을 올리는 중이에요. 잠시 후 다시 눌러 주세요.');
+  if (works.some(w => w.state === 'error')) return alert('업로드에 실패한 사진이 있어요. 다시 시도하거나 삭제해 주세요.');
+  const d = collect(), miss = validate(d);
+  if (miss.length) { alert('아래 항목을 채워 주세요:\n\n· ' + miss.join('\n· ')); return; }
+  const short = [...Array(NQ)].map((_, i) => i + 1).filter(i => d['q' + i].length < MIN_CHARS);
+  if (short.length && !confirm(`Q${short.join(', Q')} 문항이 ${MIN_CHARS}자보다 짧아요.\n그래도 제출할까요? (나중에 같은 링크로 수정할 수 있어요)`)) return;
+  $('#overlay').classList.remove('hide');
+  try {
+    const r = await api({ action: 'submit', token: TOKEN, data: d });
+    lsDel(DRAFT_KEY);
+    $('#doneMsg').textContent = `${r.submittedAt} 제출되었습니다. 선생님께 잘 전달되었어요. 정말 수고 많았습니다!`;
+    show('done');
+  } catch (e) { alert('제출 실패: ' + e.message + '\n\n잠시 후 다시 시도해 주세요. 작성 내용은 임시저장되어 있어요.'); }
+  finally { $('#overlay').classList.add('hide'); }
+}
+
+function show(v) {
+  ['loading', 'errorView', 'doneView'].forEach(id => $('#' + id).classList.add('hide'));
+  form.classList.add('hide'); $('#bar').classList.add('hide'); $('#foot').classList.add('hide');
+  if (v === 'form') { form.classList.remove('hide'); $('#bar').classList.remove('hide'); $('#foot').classList.remove('hide'); }
+  else $('#' + (v === 'done' ? 'doneView' : v === 'error' ? 'errorView' : 'loading')).classList.remove('hide');
+  window.scrollTo(0, 0);
+}
+function showForm() { show('form'); onChange(); }
+
+async function init() {
+  if (DEMO) $('#demoBar').classList.remove('hide');
+  build();
+  if (!TOKEN) { $('#errorMsg').textContent = '개인 링크로 접속해야 합니다. 선생님께 받은 링크를 그대로 열어 주세요.'; return show('error'); }
+  try {
+    const r = await api({ action: 'load', token: TOKEN });
+    form.name.value = r.name || '';
+    let src = r.essay;
+    const draft = JSON.parse(lsGet(DRAFT_KEY) || 'null');
+    if (draft && r.status !== '승인' && (!r.essay || confirm('이 기기에 임시저장된 작성 내용이 있어요. 불러올까요?'))) src = draft;
+    fill(src);
+    locked = r.status === '승인';
+    const note = $('#statusNote');
+    if (r.status === '보완요청') note.innerHTML = `<div class="notice warn"><b>✏️ 선생님 보완 요청</b><br>${esc(r.reviewNote || '내용을 조금 더 보완해 주세요.')}</div>`;
+    else if (locked) note.innerHTML = `<div class="notice ok"><b>✅ 선생님이 승인한 수기입니다.</b> 수정이 필요하면 선생님께 말씀해 주세요.</div>`;
+    else if (r.status === '제출') note.innerHTML = `<div class="notice info">이미 제출한 수기입니다 (${esc(r.essay && r.essay.submittedAt || '')}). 고친 뒤 다시 제출하면 덮어써집니다.</div>`;
+    else note.innerHTML = `<div class="notice info"><b>${esc(r.name)}</b> 학생, 합격 축하해요! 작성 중인 내용은 이 기기에 자동 임시저장됩니다.</div>`;
+    if (locked) { $('#submitBtn').disabled = true; $('#drop').classList.add('hide'); }
+    showForm();
+    loadSavedWorks(src && src.works);
+  } catch (e) { $('#errorMsg').textContent = e.message; show('error'); }
+}
+init();
+</script>
+</body>
+</html>

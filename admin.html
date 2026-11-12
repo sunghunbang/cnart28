@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>합격수기 관리 | 선배들이 알려주는 충남예고 미술과 합격수기</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+<style>
+:root{--ink:#1f1d1a;--sub:#6b665e;--line:#e4e0d8;--bg:#f7f5f0;--card:#fff;--accent:#c2410c;--accent-soft:#fff1e8}
+*{box-sizing:border-box}
+body{margin:0;font-family:Pretendard,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased}
+header{background:var(--ink);color:#fff;padding:16px 20px}
+header .wrap{max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+header h1{font-size:19px;margin:0}
+header small{color:#f3c9a8;font-weight:600;letter-spacing:.1em;font-size:11px;display:block}
+header .sp{flex:1}
+header a{color:#cfcac0;font-size:13px}
+main{max-width:1180px;margin:0 auto;padding:18px 16px 60px}
+.tabs{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap}
+.tabs button{font:inherit;border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 16px;font-weight:600;cursor:pointer;font-size:14px}
+.tabs button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:14px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.stat b{font-size:24px;display:block;font-variant-numeric:tabular-nums}
+.stat span{font-size:12.5px;color:var(--sub)}
+.tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;align-items:center}
+.tools input,.tools select{font:inherit;font-size:14px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:#fff}
+.tools .sp{flex:1}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+th{font-size:12.5px;color:var(--sub);font-weight:600;background:#fcfbf8;position:sticky;top:0}
+tr:hover td{background:#fcfbf8}
+.badge{display:inline-block;font-size:12px;font-weight:700;padding:3px 9px;border-radius:999px}
+.b-미제출{background:#f1efe8;color:#6b665e}.b-제출{background:#e0ecff;color:#1e40af}.b-보완요청{background:#fff3d6;color:#92400e}.b-승인{background:#dcfce7;color:#166534}
+.btn{font:inherit;border:0;border-radius:8px;padding:8px 14px;font-size:13.5px;font-weight:600;cursor:pointer;background:var(--ink);color:#fff;white-space:nowrap}
+.btn.ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.btn.acc{background:var(--accent)}
+.btn.sm{padding:5px 10px;font-size:12.5px}
+.btn.danger{background:#fff;color:#b91c1c;border:1px solid #fecaca}
+textarea,input.t{width:100%;font:inherit;font-size:14px;padding:10px 12px;border:1px solid var(--line);border-radius:9px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.ec{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;cursor:pointer;transition:transform .15s,box-shadow .15s}
+.ec:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.07)}
+.ec .top{background:var(--accent-soft);padding:14px 16px}
+.ec .top .u{font-size:17px;font-weight:800}
+.ec .top .m{font-size:13.5px;color:var(--sub)}
+.ec .body{padding:12px 16px;font-size:13px;color:var(--sub)}
+.ec .body .nm{color:var(--ink);font-weight:700;font-size:14px}
+.ec .ex{margin-top:8px;color:var(--ink);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.modal{position:fixed;inset:0;background:rgba(20,18,15,.55);display:flex;justify-content:center;align-items:flex-start;overflow:auto;padding:30px 12px;z-index:40}
+.sheet{background:#fff;border-radius:16px;max-width:860px;width:100%;padding:26px 28px}
+.sheet .hd{display:flex;gap:10px;align-items:flex-start}
+.sheet .hd .sp{flex:1}
+.sheet h2{margin:0;font-size:22px}
+.kv{display:grid;grid-template-columns:110px 1fr;gap:6px 12px;font-size:14px;margin:16px 0;background:var(--bg);border-radius:12px;padding:14px 16px}
+.kv dt{color:var(--sub)}.kv dd{margin:0;font-weight:600}
+.qa{margin:18px 0}
+.qa h4{margin:0 0 6px;font-size:15px;color:var(--accent)}
+.qa p{margin:0;white-space:pre-wrap;font-size:14.5px;line-height:1.75}
+.imgs{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin:14px 0}
+.imgs .im{background:#f1efe8;border-radius:10px;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;color:var(--sub);font-size:12.5px;overflow:hidden;position:relative}
+.imgs .im img{width:100%;height:100%;object-fit:cover;background:#f1efe8;cursor:zoom-in}
+.imgs .cap{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.7));color:#fff;font-size:11.5px;padding:14px 8px 6px}
+.imgs .im .no{position:absolute;left:6px;top:6px;background:rgba(0,0,0,.65);color:#fff;font-size:11px;font-weight:700;padding:2px 7px;border-radius:999px}
+.copy{font-size:11.5px;color:var(--sub);text-align:center;border-top:1px solid var(--line);margin-top:20px;padding-top:12px}
+.imgs .im a.dl{position:absolute;right:6px;bottom:6px;background:rgba(0,0,0,.6);color:#fff;font-size:11px;padding:3px 7px;border-radius:6px;text-decoration:none}
+.review{border-top:1px solid var(--line);margin-top:18px;padding-top:16px}
+.login{max-width:380px;margin:80px auto}
+.hint{font-size:12.5px;color:var(--sub)}
+.hide{display:none!important}
+.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 18px;border-radius:10px;font-size:14px;z-index:60}
+.demo{background:#fde68a;color:#78350f;text-align:center;font-size:13px;padding:6px}
+.empty{text-align:center;color:var(--sub);padding:40px}
+.linkbox{font-family:ui-monospace,Menlo,monospace;font-size:12px;background:var(--bg);border-radius:8px;padding:10px;white-space:pre-wrap;max-height:260px;overflow:auto}
+@media(max-width:760px){.stats{grid-template-columns:repeat(3,1fr)}.grid2{grid-template-columns:1fr}.imgs{grid-template-columns:1fr 1fr}.hide-m{display:none}}
+@media print{header,.tabs,.tools,.stats,.review,.sheet .hd button,.no-print{display:none!important}.modal{position:static;background:none;padding:0}.sheet{padding:0;max-width:none}body{background:#fff}main>*:not(.modal){display:none!important}}
+
+/* ── 민트·화이트 심플 테마 ── */
+:root{--ink:#222;--sub:#8a8f95;--line:#ececec;--bg:#fff;--card:#fff;--accent:#14c4a2;--accent-dark:#0aa486;--accent-soft:#e9faf6;--soft:#f7f8f9;--ok:#0aa486;--warn:#d97706;--err:#dc2626}
+body{background:#fff}
+header{background:#fff;color:var(--ink);border-top:4px solid var(--accent);border-bottom:1px solid var(--line);padding:18px 20px}
+header small{color:var(--accent-dark)}
+header h1{font-weight:800}
+header a{color:var(--sub)}
+.tabs{gap:0;border-bottom:1px solid var(--line);margin-bottom:22px}
+.tabs button{border:0;border-radius:0;background:none;padding:12px 20px;color:var(--sub);font-weight:500;border-bottom:2px solid transparent;margin-bottom:-1px}
+.tabs button.on{background:none;color:var(--ink);font-weight:700;border-bottom-color:var(--accent)}
+.stat{border-radius:8px;border-color:var(--line)}
+.stat b{color:var(--ink)}
+.card{border-radius:8px}
+th{background:var(--soft);color:#666;font-weight:500}
+tr:hover td{background:#fafcfb}
+.b-미제출{background:var(--soft);color:var(--sub)}.b-제출{background:#eef4ff;color:#3b5bdb}.b-보완요청{background:#fff4e5;color:#c2410c}.b-승인{background:var(--accent-soft);color:var(--accent-dark)}
+.btn{border-radius:6px;background:var(--accent)}
+.btn.acc{background:var(--accent)}
+.btn:hover{filter:brightness(.95)}
+.tools input,.tools select,textarea,input.t{border-radius:6px}
+.ec{border-radius:8px;border-color:var(--line)}
+.ec .top{background:#fff;border-bottom:1px solid var(--line)}
+.ec .top .u{font-weight:700}
+.ec:hover{box-shadow:0 6px 18px rgba(20,196,162,.12);border-color:#bfeee3}
+.sheet{border-radius:10px}
+.kv{background:var(--soft);border-radius:6px}
+.qa h4{color:var(--accent-dark)}
+.imgs .im{border-radius:6px;background:var(--soft)}
+.linkbox{background:var(--soft)}
+</style>
+</head>
+<body>
+<div id="demoBar" class="demo hide">데모 모드 — 예시 데이터로 보이는 미리보기입니다 (API_URL 연결 전)</div>
+<header><div class="wrap">
+  <div><small>선배들이 알려주는 충남예고 미술과 합격수기</small><h1>합격수기 관리</h1></div>
+  <div class="sp"></div>
+  <span style="font-size:12px;color:var(--sub)">자료제작 · 충남예술고 교사 방성훈</span>
+  <a id="sheetLink" target="_blank" class="hide">📊 구글시트</a>
+  <a id="folderLink" target="_blank" class="hide">🗂 사진폴더</a>
+  <a href="#" id="logout" class="hide">로그아웃</a>
+</div></header>
+
+<main>
+  <div id="loginView" class="login card">
+    <h2 style="margin:0 0 6px;font-size:19px">관리자 로그인</h2>
+    <p class="hint" style="margin:0 0 14px">Apps Script setup 실행 시 로그에 나온 관리자 비밀번호를 입력하세요.</p>
+    <input class="t" type="password" id="keyInput" placeholder="관리자 비밀번호">
+    <button class="btn acc" style="width:100%;margin-top:10px;padding:11px" id="loginBtn">들어가기</button>
+    <p class="hint" id="loginErr" style="color:#b91c1c"></p>
+  </div>
+
+  <div id="app" class="hide">
+    <div class="tabs">
+      <button data-tab="status" class="on">📋 제출 현황</button>
+      <button data-tab="essays">📖 수기 보기</button>
+      <button data-tab="links">🔗 링크 만들기</button>
+    </div>
+
+    <section id="tab-status">
+      <div class="stats" id="stats"></div>
+      <div class="tools">
+        <input id="q" placeholder="이름·대학·메모 검색">
+        <select id="fStatus"><option value="">전체 상태</option><option>미제출</option><option>제출</option><option>보완요청</option><option>승인</option></select>
+        <div class="sp"></div>
+        <button class="btn ghost" id="copyUnsent">미제출자 링크 복사</button>
+        <button class="btn ghost" id="refresh">새로고침</button>
+      </div>
+      <div class="card" style="padding:0;overflow:auto"><table>
+        <thead><tr><th>이름</th><th class="hide-m">메모</th><th>상태</th><th>대학 / 전공</th><th class="hide-m">제출일시</th><th>개인 링크</th><th></th></tr></thead>
+        <tbody id="tbody"></tbody></table></div>
+    </section>
+
+    <section id="tab-essays" class="hide">
+      <div class="tools">
+        <input id="q2" placeholder="대학·전공·이름 검색">
+        <select id="fMajor"><option value="">전체 전공</option><option>디자인</option><option>서양화</option><option>조소</option><option>한국화</option></select>
+        <select id="fTrack"><option value="">수시+정시</option><option>수시</option><option>정시</option><option>기타</option></select>
+        <select id="fYear"><option value="">전체 년도</option></select>
+        <select id="fApproved"><option value="">제출 전체</option><option value="승인">승인만</option></select>
+        <div class="sp"></div>
+        <button class="btn ghost" id="csvBtn">⬇ 엑셀(CSV) 내보내기</button>
+      </div>
+      <div class="cards" id="cards"></div>
+    </section>
+
+    <section id="tab-links" class="hide">
+      <div class="grid2">
+        <div class="card">
+          <h3 style="margin:0 0 6px">새 학생 링크 만들기</h3>
+          <p class="hint" style="margin:0 0 10px">한 줄에 한 명씩 이름을 입력하세요. 여러 대학 합격자는 같은 이름을 두 줄 넣고 메모로 구분하면 수기 2편을 받을 수 있어요.</p>
+          <textarea id="names" rows="10" placeholder="홍길동&#10;김예진&#10;박서연"></textarea>
+          <input class="t" id="memo" placeholder="메모 (예: 28기 / 2027 수시)" style="margin-top:8px">
+          <button class="btn acc" id="addBtn" style="margin-top:10px">링크 만들기</button>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 6px">만들어진 링크</h3>
+          <p class="hint" style="margin:0 0 10px">아래 내용을 복사해서 학생별로 카톡·밴드 개인메시지로 보내세요. <b>링크 = 그 학생의 열쇠</b>라 단체방에 올리면 안 돼요.</p>
+          <div class="linkbox" id="newLinks">아직 없음</div>
+          <button class="btn ghost" id="copyNew" style="margin-top:10px">전체 복사</button>
+        </div>
+      </div>
+      <div class="card" style="margin-top:16px">
+        <h3 style="margin:0 0 6px">학생 제출 페이지 주소</h3>
+        <p class="hint" style="margin:0 0 8px">링크 생성 기준 주소입니다. 보통 자동으로 맞춰지며, 다르면 고쳐 주세요.</p>
+        <input class="t" id="baseUrl">
+      </div>
+    </section>
+  </div>
+</main>
+
+<div id="modal" class="modal hide"><div class="sheet" id="sheet"></div></div>
+<div id="toast" class="toast hide"></div>
+
+<script>
+/* ===== 설정: Apps Script 웹앱 URL (index.html과 같은 값) ===== */
+const API_URL = 'https://script.google.com/macros/s/AKfycbwxk4wwS31QDMu60TbF6AIPtHawQsg6XQo0NMmx5ubBhhHBmZAr_IXR6G5Q49gSfkEt6w/exec';
+/* =========================================================== */
+const DEMO = !API_URL;
+const Q_TITLES = ['지원한 전형/학과의 지원 동기는 무엇이며, 어떻게 준비했나요?', '학업성적(수능, 내신)은 평소에 어떻게 준비했나요?', '실기 준비는 어떻게 했나요?', '전공실기(수행평가) 성적은 어땠나요?', '실기고사 당일 출제문제는 무엇이었으며, 어떻게 발상하여 풀어나갔나요?', '고사장의 구체적인 분위기는 어떠했나요?', '힘들고 지칠 때 어떻게 슬럼프를 극복했나요?', '합격의 주요인은 무엇이라고 생각하나요?', '마지막으로 후배들에게 꼭 하고 싶은 말'];
+const NOTICE = '※ 충남예술고 학생을 위한 전용 자료입니다. 불법 복제·공유를 금지합니다. (자료제작: 충남예술고 교사 방성훈)';
+const $ = s => document.querySelector(s);
+let KEY = '', DATA = { students: [], essays: [] };
+const imgCache = {};
+
+function ss(k, v) { try { if (v === undefined) return sessionStorage.getItem(k); if (v === null) sessionStorage.removeItem(k); else sessionStorage.setItem(k, v); } catch (e) { return null; } }
+function ls(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } }
+function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
+function toast(t) { const el = $('#toast'); el.textContent = t; el.classList.remove('hide'); clearTimeout(el._t); el._t = setTimeout(() => el.classList.add('hide'), 2200); }
+async function copy(t) { try { await navigator.clipboard.writeText(t); toast('복사했어요'); } catch (e) { prompt('복사하세요', t); } }
+
+async function api(body) {
+  if (DEMO) return demoApi(body);
+  const res = await fetch(API_URL, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(Object.assign({ key: KEY }, body)) });
+  const j = await res.json(); if (!j.ok) throw new Error(j.error || '오류'); return j;
+}
+
+/* ---------- 데모 데이터 ---------- */
+const DEMO_DB = {
+  students: [
+    { token: 'a1b2c3d4e5f6a7b8', name: '김예진', memo: '28기', status: '승인', submittedAt: '2026-11-10 21:14', reviewNote: '' },
+    { token: 'b2c3d4e5f6a7b8c9', name: '박서연', memo: '28기', status: '제출', submittedAt: '2026-11-11 19:02', reviewNote: '' },
+    { token: 'c3d4e5f6a7b8c9d0', name: '이도윤', memo: '28기', status: '보완요청', submittedAt: '2026-11-09 23:40', reviewNote: 'Q4 출제문제를 더 구체적으로 써 주세요.' },
+    { token: 'd4e5f6a7b8c9d0e1', name: '최하늘', memo: '28기', status: '미제출', submittedAt: '', reviewNote: '' }
+  ],
+  essays: [
+    { token: 'a1b2c3d4e5f6a7b8', submittedAt: '2026-11-10 21:14', editCount: 0, name: '김예진', highSchool: '충남예술고등학교', hsMajor: '디자인', prep: '방과후', academy: '', career: '3년 2개월', year: '2027학년도', track: '수시', univ: '홍익대', campus: '서울', major: '시각디자인과', ratio: '12.4 : 1', special: '실기 우수', multi: '국민대 시각디자인', gpa: '2.8', mock: '국어2 · 영어2 · 사탐3 (9월 모평)', q1: '중학교 때 포스터 공모전을 계기로 시각디자인에 관심을 갖게 되었고…', q2: '평일에는 실기 후 하루 2시간씩 국어·영어를 꾸준히…', q3: '1학년 때는 기초 소묘, 2학년부터 기초디자인 위주로…', q4: '1학년 B, 2학년부터 A를 유지했습니다…', q5: '제시물: 투명 컵, 전구, 리본. 조건: 빛의 이동을 주제로…', q6: '조용했고 조명이 약간 어두웠습니다…', q7: '2학년 여름 슬럼프 때 크로키 노트를 다시…', q8: '발상 노트를 꾸준히 쓴 것이…', q9: '시간 배분 연습을 꼭 하세요…', works: [{ id: 'd1', caption: '빛의 이동' }, { id: 'd2', caption: '' }, { id: 'd3', caption: '' }, { id: 'd4', caption: '' }, { id: 'd5', caption: '' }] },
+    { token: 'b2c3d4e5f6a7b8c9', submittedAt: '2026-11-11 19:02', editCount: 1, name: '박서연', highSchool: '충남예술고등학교', hsMajor: '서양화', prep: '방과후+학원', academy: '○○미술학원', career: '2년 6개월', year: '2027학년도', track: '정시', univ: '서울과기대', campus: '', major: '조형예술과', ratio: '8.1 : 1', special: '', multi: '', gpa: '3.4', mock: '', q1: '서양화 전공으로 회화의 깊이를 더 공부하고 싶어…', q2: '수능 위주로…', q3: '인물 수채화를 매일 1장씩…', q4: '…', q5: '주제: 나의 공간…', q6: '…', q7: '…', q8: '…', q9: '…', works: [{ id: 'e1', caption: '' }, { id: 'e2', caption: '' }, { id: 'e3', caption: '' }, { id: 'e4', caption: '' }, { id: 'e5', caption: '' }, { id: 'e6', caption: '' }] },
+    { token: 'c3d4e5f6a7b8c9d0', submittedAt: '2026-11-09 23:40', editCount: 0, name: '이도윤', highSchool: '충남예술고등학교', hsMajor: '디자인', prep: '학원', academy: '△△미술학원', career: '4년', year: '2027학년도', track: '수시', univ: '경희대', campus: '국제', major: '산업디자인학과', ratio: '6.7 : 1', special: '', multi: '', gpa: '3.1', mock: '', q1: '…', q2: '…', q3: '…', q4: '…', q5: '짧음', q6: '…', q7: '…', q8: '…', q9: '…', works: [{ id: 'f1', caption: '' }, { id: 'f2', caption: '' }, { id: 'f3', caption: '' }, { id: 'f4', caption: '' }, { id: 'f5', caption: '' }] }
+  ]
+};
+function demoApi(b) {
+  return new Promise((r, j) => setTimeout(() => {
+    if (b.action === 'admin_list') return r(Object.assign({ ok: true, sheetUrl: '#', folderUrl: '#' }, JSON.parse(JSON.stringify(DEMO_DB))));
+    if (b.action === 'admin_add') { const added = b.names.map(n => ({ token: Math.random().toString(16).slice(2, 18), name: n })); added.forEach(a => DEMO_DB.students.push({ token: a.token, name: a.name, memo: b.memo, status: '미제출', submittedAt: '' })); return r({ ok: true, added }); }
+    if (b.action === 'admin_review') { const s = DEMO_DB.students.find(x => x.token === b.token); s.status = b.status; s.reviewNote = b.note; return r({ ok: true }); }
+    if (b.action === 'admin_delete') { DEMO_DB.students = DEMO_DB.students.filter(x => x.token !== b.token); DEMO_DB.essays = DEMO_DB.essays.filter(x => x.token !== b.token); return r({ ok: true }); }
+    j(new Error('데모에서는 사진이 없습니다'));
+  }, 250));
+}
+
+/* ---------- 로그인 ---------- */
+async function login(k) {
+  KEY = k; $('#loginErr').textContent = '';
+  try { await load(); ss('hk_admin', k); $('#loginView').classList.add('hide'); $('#app').classList.remove('hide'); $('#logout').classList.remove('hide'); }
+  catch (e) { $('#loginErr').textContent = e.message; ss('hk_admin', null); }
+}
+$('#loginBtn').onclick = () => login($('#keyInput').value.trim());
+$('#keyInput').onkeydown = e => { if (e.key === 'Enter') $('#loginBtn').click(); };
+$('#logout').onclick = e => { e.preventDefault(); ss('hk_admin', null); location.reload(); };
+
+async function load() {
+  DATA = await api({ action: 'admin_list' });
+  if (DATA.sheetUrl && !DEMO) { $('#sheetLink').href = DATA.sheetUrl; $('#sheetLink').classList.remove('hide'); $('#folderLink').href = DATA.folderUrl; $('#folderLink').classList.remove('hide'); }
+  const years = [...new Set(DATA.essays.map(e => e.year).filter(Boolean))].sort().reverse();
+  $('#fYear').innerHTML = '<option value="">전체 년도</option>' + years.map(y => `<option>${esc(y)}</option>`).join('');
+  renderStatus(); renderCards();
+}
+
+/* ---------- 탭 ---------- */
+document.querySelectorAll('.tabs button').forEach(b => b.onclick = () => {
+  document.querySelectorAll('.tabs button').forEach(x => x.classList.toggle('on', x === b));
+  ['status', 'essays', 'links'].forEach(t => $('#tab-' + t).classList.toggle('hide', t !== b.dataset.tab));
+});
+
+function baseUrl() { return $('#baseUrl').value.trim(); }
+function linkOf(t) { return baseUrl() + (baseUrl().includes('?') ? '&' : '?') + 't=' + t; }
+function essayOf(t) { return DATA.essays.find(e => e.token === t); }
+
+/* ---------- 제출 현황 ---------- */
+function renderStatus() {
+  const S = DATA.students, cnt = s => S.filter(x => x.status === s).length;
+  $('#stats').innerHTML = [['전체', S.length], ['미제출', cnt('미제출')], ['제출(검토대기)', cnt('제출')], ['보완요청', cnt('보완요청')], ['승인', cnt('승인')]]
+    .map(([k, v]) => `<div class="stat"><b>${v}</b><span>${k}</span></div>`).join('');
+  const q = $('#q').value.trim(), fs = $('#fStatus').value;
+  const rows = S.filter(s => {
+    const e = essayOf(s.token) || {};
+    return (!fs || s.status === fs) && (!q || [s.name, s.memo, e.univ, e.major].join(' ').includes(q));
+  });
+  $('#tbody').innerHTML = rows.length ? rows.map(s => {
+    const e = essayOf(s.token);
+    return `<tr>
+      <td><b>${esc(s.name)}</b></td><td class="hide-m">${esc(s.memo)}</td>
+      <td><span class="badge b-${esc(s.status)}">${esc(s.status)}</span></td>
+      <td>${e ? esc(e.univ + (e.campus ? '(' + e.campus + ')' : '') + ' · ' + e.major) : '<span class="hint">-</span>'}</td>
+      <td class="hide-m">${esc(s.submittedAt || '')}</td>
+      <td><button class="btn sm ghost" data-copy="${esc(s.token)}">링크 복사</button></td>
+      <td>${e ? `<button class="btn sm" data-open="${esc(s.token)}">보기</button>` : `<button class="btn sm danger" data-del="${esc(s.token)}">삭제</button>`}</td></tr>`;
+  }).join('') : '<tr><td colspan="7" class="empty">학생이 없습니다. ‘링크 만들기’ 탭에서 추가하세요.</td></tr>';
+}
+$('#q').oninput = renderStatus; $('#fStatus').onchange = renderStatus;
+$('#refresh').onclick = async () => { await load(); toast('새로고침 완료'); };
+$('#tbody').onclick = async ev => {
+  const b = ev.target.closest('button'); if (!b) return;
+  if (b.dataset.copy) copy(linkOf(b.dataset.copy));
+  if (b.dataset.open) openEssay(b.dataset.open);
+  if (b.dataset.del && confirm('이 학생 링크를 삭제할까요? (제출 전 학생만 삭제 가능)')) { await api({ action: 'admin_delete', token: b.dataset.del }); await load(); toast('삭제됨'); }
+};
+$('#copyUnsent').onclick = () => {
+  const list = DATA.students.filter(s => s.status === '미제출' || s.status === '보완요청');
+  if (!list.length) return toast('미제출자가 없어요');
+  copy(list.map(s => `${s.name}${s.status === '보완요청' ? ' (보완요청)' : ''}\n${linkOf(s.token)}`).join('\n\n'));
+};
+
+/* ---------- 수기 카드 ---------- */
+function filteredEssays() {
+  const q = $('#q2').value.trim(), fm = $('#fMajor').value, ft = $('#fTrack').value, fy = $('#fYear').value, fa = $('#fApproved').value;
+  return DATA.essays.filter(e => {
+    const s = DATA.students.find(x => x.token === e.token) || {};
+    return (!fm || e.hsMajor === fm) && (!ft || e.track === ft) && (!fy || e.year === fy) && (!fa || s.status === fa) &&
+      (!q || [e.name, e.univ, e.major, e.campus].join(' ').includes(q));
+  }).sort((a, b) => (a.univ || '').localeCompare(b.univ || '', 'ko'));
+}
+function renderCards() {
+  const list = filteredEssays();
+  $('#cards').innerHTML = list.length ? list.map(e => {
+    const s = DATA.students.find(x => x.token === e.token) || {};
+    return `<div class="ec" data-open="${esc(e.token)}">
+      <div class="top"><div class="u">${esc(e.univ)}${e.campus ? `<span style="font-weight:500;font-size:13px">(${esc(e.campus)})</span>` : ''}</div><div class="m">${esc(e.major)}</div></div>
+      <div class="body"><span class="nm">${esc(e.name)}</span> · ${esc(e.hsMajor || '')} · ${esc(e.year)} ${esc(e.track)} · 작품 ${(e.works || []).length}장
+        <div style="margin-top:6px"><span class="badge b-${esc(s.status || '제출')}">${esc(s.status || '')}</span> ${e.ratio ? '경쟁률 ' + esc(e.ratio) : ''} ${e.special ? '· ⭐ ' + esc(e.special) : ''}</div>
+        <div class="ex">${esc(e.q9 || e.q8)}</div></div></div>`;
+  }).join('') : '<div class="empty">제출된 수기가 없습니다.</div>';
+}
+['#q2', '#fMajor', '#fTrack', '#fYear', '#fApproved'].forEach(s => { $(s).oninput = renderCards; $(s).onchange = renderCards; });
+$('#cards').onclick = ev => { const c = ev.target.closest('[data-open]'); if (c) openEssay(c.dataset.open); };
+
+/* ---------- 상세 ---------- */
+function prepText(e) { return (e.prep || '-').replace('+', ' + ') + (e.academy ? ` (${e.academy})` : ''); }
+function interviewText(e) {
+  const L = [`[선배들이 알려주는 충남예고 미술과 합격수기]`, `${e.year} ${e.track} | ${e.univ}${e.campus ? '(' + e.campus + ')' : ''} ${e.major} 합격`, '',
+    `합격생 이름 : ${e.name}`, `출신고교 : ${e.highSchool}`, `전공 : ${e.hsMajor || '-'}`, `전공실기 : ${prepText(e)}`, `전공실기경력 : ${e.career}`,
+    `합격년도 : ${e.year} / 구분 : ${e.track}`, `대학 : ${e.univ}${e.campus ? '(' + e.campus + ')' : ''}`, `합격 학과 : ${e.major}`,
+    `경쟁률 : ${e.ratio || '-'}`, `특기사항 : ${e.special || '-'}`, `복수합격 : ${e.multi || '-'}`,
+    `내신등급(국·영·사 평균) : ${e.gpa || '-'}`, `모의고사 : ${e.mock || '-'}`, ''];
+  Q_TITLES.forEach((t, i) => L.push(`Q${i + 1}. ${t}`, e['q' + (i + 1)] || '', ''));
+  L.push(`■ 평소작품 ${(e.works || []).length}장`, '', NOTICE);
+  return L.join('\n');
+}
+function openEssay(token) {
+  const e = essayOf(token), s = DATA.students.find(x => x.token === token) || {};
+  if (!e) return;
+  $('#sheet').innerHTML = `
+    <div class="hd"><div><div class="hint">${esc(e.year)} ${esc(e.track)} · 제출 ${esc(e.submittedAt)}${e.editCount > 0 ? ` · 수정 ${esc(e.editCount)}회` : ''}</div>
+      <h2>${esc(e.univ)}${e.campus ? '(' + esc(e.campus) + ')' : ''} ${esc(e.major)}</h2></div><div class="sp"></div>
+      <button class="btn sm ghost" id="cpTxt">원고 복사</button><button class="btn sm ghost" onclick="window.print()">인쇄/PDF</button><button class="btn sm" id="closeM">닫기</button></div>
+    <dl class="kv">
+      <dt>합격생</dt><dd>${esc(e.name)}</dd>
+      <dt>출신고교</dt><dd>${esc(e.highSchool)}</dd>
+      <dt>전공</dt><dd>${esc(e.hsMajor || '-')}</dd>
+      <dt>전공실기</dt><dd>${esc(prepText(e))}</dd>
+      <dt>전공실기경력</dt><dd>${esc(e.career)}</dd><dt>경쟁률</dt><dd>${esc(e.ratio || '-')}</dd>
+      <dt>특기사항</dt><dd>${esc(e.special || '-')}</dd><dt>복수합격</dt><dd>${esc(e.multi || '-')}</dd>
+      <dt>내신등급</dt><dd>${esc(e.gpa || '-')} <span class="hint">(국·영·사 평균)</span></dd>
+      <dt>모의고사</dt><dd>${esc(e.mock || '-')}</dd></dl>
+    <b>평소작품 ${(e.works || []).length}장</b>
+    <div class="imgs">${(e.works || []).map((w, i) => `<div class="im" data-img="${esc(w.id)}" data-cap="${esc(w.caption)}" data-no="${i === 0 ? '대표작' : i + 1}">불러오는 중…</div>`).join('')}</div>
+    ${Q_TITLES.map((t, i) => `<div class="qa"><h4>Q${i + 1}. ${t}</h4><p>${esc(e['q' + (i + 1)])}</p><div class="hint">${String(e['q' + (i + 1)] || '').length}자</div></div>`).join('')}
+    <div class="review"><b>검토</b>
+      <div style="display:flex;gap:8px;margin:10px 0;flex-wrap:wrap">
+        ${['제출', '보완요청', '승인'].map(st => `<button class="btn sm ${s.status === st ? 'acc' : 'ghost'}" data-st="${st}">${st === '제출' ? '검토대기' : st}</button>`).join('')}</div>
+      <textarea id="rnote" rows="3" placeholder="보완요청 시 학생에게 보일 메모 (예: Q4 출제문제를 더 구체적으로)">${esc(s.reviewNote || '')}</textarea>
+      <p class="hint">‘보완요청’ → 학생이 같은 링크로 들어가면 메모가 보이고 수정 가능 · ‘승인’ → 학생은 더 이상 수정 불가</p></div>
+    <div class="copy">${NOTICE}</div>`;
+  $('#modal').classList.remove('hide'); document.body.style.overflow = 'hidden';
+  $('#closeM').onclick = closeModal;
+  $('#cpTxt').onclick = () => copy(interviewText(e));
+  $('#sheet').querySelectorAll('[data-st]').forEach(b => b.onclick = async () => {
+    await api({ action: 'admin_review', token, status: b.dataset.st, note: $('#rnote').value });
+    await load(); openEssay(token); toast('저장했어요');
+  });
+  $('#sheet').querySelectorAll('[data-img]').forEach(loadImg);
+}
+async function loadImg(box) {
+  const id = box.dataset.img; if (!id) return;
+  const deco = `<span class="no">${esc(box.dataset.no)}</span>${box.dataset.cap ? `<div class="cap">${esc(box.dataset.cap)}</div>` : ''}`;
+  try {
+    const r = imgCache['t' + id] || (imgCache['t' + id] = await api({ action: 'admin_image', id, thumb: true }));
+    box.innerHTML = `<img src="data:${r.mime};base64,${r.b64}" alt="">${deco}`;
+    box.querySelector('img').onclick = async () => {
+      const w = window.open(''); if (!w) return;
+      w.document.write('<p style="font-family:sans-serif">원본 불러오는 중…</p>');
+      try { const f = imgCache[id] || (imgCache[id] = await api({ action: 'admin_image', id }));
+        w.document.body.innerHTML = `<img src="data:${f.mime};base64,${f.b64}" style="max-width:100%"><p><a download="${id}.jpg" href="data:${f.mime};base64,${f.b64}">원본 저장</a></p>`; }
+      catch (e) { w.document.body.textContent = '불러오기 실패'; }
+    };
+  } catch (err) { box.innerHTML = (DEMO ? '(데모: 사진 없음)' : '사진 불러오기 실패') + deco; }
+}
+function closeModal() { $('#modal').classList.add('hide'); document.body.style.overflow = ''; }
+$('#modal').onclick = e => { if (e.target.id === 'modal') closeModal(); };
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+/* ---------- 링크 만들기 ---------- */
+$('#addBtn').onclick = async () => {
+  const names = $('#names').value.split('\n').map(s => s.trim()).filter(Boolean);
+  if (!names.length) return toast('이름을 입력하세요');
+  if (!baseUrl()) return toast('학생 제출 페이지 주소를 먼저 입력하세요');
+  $('#addBtn').disabled = true;
+  try {
+    const r = await api({ action: 'admin_add', names, memo: $('#memo').value.trim() });
+    $('#newLinks').textContent = r.added.map(a => `[선배들이 알려주는 충남예고 미술과 합격수기]\n${a.name} 학생, 합격 축하해요! 아래 개인 링크로 합격수기를 작성해 주세요. (본인만 사용)\n${linkOf(a.token)}`).join('\n\n');
+    $('#names').value = ''; await load(); toast(`${r.added.length}명 링크 생성`);
+  } catch (e) { alert(e.message); } finally { $('#addBtn').disabled = false; }
+};
+$('#copyNew').onclick = () => copy($('#newLinks').textContent);
+$('#baseUrl').onchange = () => ls('hk_base', baseUrl());
+
+/* ---------- CSV ---------- */
+$('#csvBtn').onclick = () => {
+  const cols = [['이름', 'name'], ['출신고교', 'highSchool'], ['고교전공', 'hsMajor'], ['전공실기', 'prep'], ['학원명', 'academy'], ['전공실기경력', 'career'], ['합격년도', 'year'], ['구분', 'track'], ['대학', 'univ'], ['캠퍼스', 'campus'], ['합격 학과', 'major'], ['경쟁률', 'ratio'], ['특기사항', 'special'], ['복수합격', 'multi'], ['내신(국영사 평균)', 'gpa'], ['모의고사', 'mock'],
+    ...Q_TITLES.map((t, i) => ['Q' + (i + 1) + ' ' + t, 'q' + (i + 1)]), ['작품수', 'workCount'], ['제출일시', 'submittedAt']];
+  const q = v => '"' + String(v == null ? '' : v).replace(/"/g, '""') + '"';
+  const csv = '\uFEFF' + [q(NOTICE), cols.map(c => q(c[0])).join(',')].concat(filteredEssays().map(e => cols.map(c => q(c[1] === 'workCount' ? (e.works || []).length : e[c[1]])).join(','))).join('\r\n');
+  const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv' }));
+  a.download = '충남예고_합격수기_' + new Date().toISOString().slice(0, 10) + '.csv'; a.click();
+};
+
+/* ---------- 시작 ---------- */
+(function () {
+  const guess = location.href.replace(/admin\.html.*$/, 'index.html').split('#')[0];
+  $('#baseUrl').value = ls('hk_base') || guess;
+  if (DEMO) { $('#demoBar').classList.remove('hide'); return login('demo'); }
+  const k = ss('hk_admin'); if (k) login(k);
+})();
+</script>
+</body>
+</html>
